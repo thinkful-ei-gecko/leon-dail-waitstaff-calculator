@@ -1,0 +1,31 @@
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.info-box {
+  border: 1px solid black;
+  width: 70%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.right div {
+  height: 200px; 
+}
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 55px;
+}
+h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
