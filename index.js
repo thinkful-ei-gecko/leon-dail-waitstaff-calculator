@@ -6,12 +6,18 @@ const database = {
   averageTip : 0
 };
 
+function startPage() {
+  loadEmptySubmitForm();
+  loadEmptyCustomerCharges();
+  loadEmptyEarningsInfo();
+}
+
 function loadEmptySubmitForm() {
   $('#submit-form').html(`
   <div class="submit-flex">
                     <div class="row">
                         <label for="base-meal-price" class="">Base Meal Price: </label>
-                        <span>$ <input type="text" class="long-input" id="base-meal-price"></span>
+                        <span> $ <input type="text" class="long-input" id="base-meal-price"></span>
                     </div>
                     <div class="row">
                         <label for="tax-rate" class="">Tax Rate:</label>
@@ -31,9 +37,11 @@ function loadEmptySubmitForm() {
 
 function loadEmptyCustomerCharges() {
   $('#customer-charges-info').html(`
-  <p id="subtotal">Subtotal <span id="subtotal-number">0</span></p>
-  <p id="tip">Tip <span id="tip-number">0</span></p>
-  <p id="total">Total <span id="total-number">0</span></p>`);
+  <div class="charges-box">
+      <p id="subtotal">Subtotal <span id="subtotal-number">0</span></p>
+      <p id="tip">Tip <span id="tip-number">0</span></p>
+      <p id="total">Total <span id="total-number">0</span></p>
+  </div>`);
 }
 
 function loadEmptyEarningsInfo() {
@@ -112,9 +120,7 @@ function resetPage() {
 }
 
 function listener() {
-  loadEmptySubmitForm();
-  loadEmptyCustomerCharges();
-  loadEmptyEarningsInfo();
+  startPage();
   submitForm();
   resetPage();
 }
