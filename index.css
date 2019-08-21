@@ -37,28 +37,9 @@ h1 {
 
 h2 {
   text-align: center;
-  border-bottom: 1px solid black;
   font-size: 24px;
   margin-bottom: 15px;
 }
-
-/*
-.row {
-  display: block;
-  width: 100%;
-}
-
-/*input { 
-  display: inline-block;
-  text-align: left;
-}
-
-label {
-  display: inline-block;
-  width: 49%;
-  text-align: right;
-}
-*/
 
 #submit-form {
   width: 100%;
@@ -90,7 +71,7 @@ label {
 .charges-box {
   width: 60%;
 }
-#tip {
+.underline {
   border-bottom: 1px solid black;
   margin-bottom: 5px;
 }
@@ -98,4 +79,9 @@ label {
 .reset {
   text-align: right;
   margin-right: 20%;
+}
+
+.display-error {
+  font-weight: bold;
+  margin-top: 3px;
 }
