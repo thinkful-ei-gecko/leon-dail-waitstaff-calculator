@@ -1,6 +1,19 @@
 'use strict';
 
+function addToCustomerCharges() {
+  let subtotal = parseInt($('#base-meal-price').val(),10);
+  let taxtotal = parseInt($('#tax-rate').val(),10);
+  let tiptotal = parseInt($('#tip-percentage').val(),10);
+  let subtotalNumber = subtotal + (subtotal * (taxtotal/100));
+  let tipNumber = subtotal * (tiptotal/100);
+  $('#subtotal-number').text(subtotalNumber);
+  $('#tip-number').text(tipNumber);
+  $('#total-number').text(subtotalNumber + tipNumber);
+}
+
 function pushData() {
+  addToCustomerCharges();
+  
 }
 
 function checkSubmissionData() {
