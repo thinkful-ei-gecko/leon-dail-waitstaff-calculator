@@ -18,21 +18,22 @@
                 <div class="submit-flex">
                     <div class="row">
                         <label for="base-meal-price" class="">Base Meal Price: </label>
-                        <span>$ <input type="text" class="long-input" id="base-meal-price"></span>
+                        <span>$ <input type="text" class="long-input" id="base-meal-price" required="required"></span>
                     </div>
                     <div class="row">
                         <label for="tax-rate" class="">Tax Rate:</label>
-                        <span>% <input type="text" class="short-input" id="tax-rate"></span>
+                        <span>% <input type="text" class="short-input" id="tax-rate" required="required"></span>
                     </div>
                     <div class="row">
                         <label for="tip-percentage" class="">Tip Percentage:</label>
-                        <span>% <input type="text" class="short-input" id="tip-percentage"></span>
+                        <span>% <input type="text" class="short-input" id="tip-percentage" required="required"></span>
                     </div>
                 </div>
                 <div class="row">
                     <button class="submit-data" type="submit">Submit</button>
                     <button class="clear-data">Clear</button>
                 </div>
+                <div class="display-error"></div>
                 </form>
             </div>
         </section>
